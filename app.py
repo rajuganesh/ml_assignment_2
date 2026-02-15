@@ -129,7 +129,7 @@ with col2:
     with download_col:
         st.markdown('<p class="right-aligned-text">📁 Data Source</p>', unsafe_allow_html=True)
         
-        test_file_path = "data/initial/bank.csv"
+        test_file_path = "data/Evaluation.csv"
         if os.path.exists(test_file_path):
             with open(test_file_path, "rb") as file:
                 st.download_button(
