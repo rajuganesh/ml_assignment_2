@@ -141,7 +141,7 @@ with col2:
     
 with col1:
     # Wrap in a div to apply the border and alignment
-    st.markdown('<div class="upload-box">', unsafe_allow_html=True)
+    #st.markdown('<div class="upload-box">', unsafe_allow_html=True)
     
     # Left-aligned small text with icon
     st.markdown('<p class="upload-label">📤 Upload test data (CSV)</p>', unsafe_allow_html=True)
@@ -153,7 +153,7 @@ with col1:
         label_visibility="collapsed"
     )
     
-    st.markdown('</div>', unsafe_allow_html=True)
+    #st.markdown('</div>', unsafe_allow_html=True)
 
 if uploaded_file is not None and model_names:
     
