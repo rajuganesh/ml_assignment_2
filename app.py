@@ -300,7 +300,7 @@ if uploaded_file is not None and model_names:
                             </div>
                         """, unsafe_allow_html=True)
                         # --- Classification Report Section ---
-                        st.markdown('<p class="plot-header">📋 Classification Report</p>', unsafe_allow_html=True)
+                        #st.markdown('<p class="plot-header">📋 Classification Report</p>', unsafe_allow_html=True)
                         report_df = pd.DataFrame(classification_report(y_true, predictions[model_name], output_dict=True)).transpose()
                         st.dataframe(report_df.style.format(precision=2), width='content')
        
@@ -311,3 +311,4 @@ if uploaded_file is not None and model_names:
             if last_row2 >= 0 and col2 < len(grid2[last_row2]):
                 with grid[last_row2][col2]:
                     st.write("")
+
